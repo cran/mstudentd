@@ -17,12 +17,12 @@ plotmtd <- function(nu, mu, Sigma, xlim = c(mu[1] + c(-10, 10)*Sigma[1, 1]),
   #' @param mu length 2 numeric vector. The mean vector.
   #' @param Sigma symmetric, positive-definite square matrix of order 2. The correlation matrix.
   #' @param xlim,ylim x-and y- limits.
-  #' @param n A one or two element vector giving the number of steps in the x and y grid, passed to \code{\link{plot3d.function}}.
+  #' @param n A one or two element vector giving the number of steps in the x and y grid, passed to \code{\link[rgl]{plot3d.function}}.
   #' @param xvals,yvals The values at which to evaluate \code{x} and \code{y}. If used, \code{xlim} and/or \code{ylim} are ignored.
   #' @param xlab,ylab,zlab The axis labels.
-  #' @param col The color to use for the plot. See \code{\link{plot3d.function}}.
+  #' @param col The color to use for the plot. See \code{\link[rgl]{plot3d.function}}.
   #' @param tol tolerance (relative to largest variance) for numerical lack of positive-definiteness in Sigma, for the estimation of the density. see \code{\link{dmtd}}.
-  #' @param ... Additional arguments to pass to \code{\link{plot3d.function}}.
+  #' @param ... Additional arguments to pass to \code{\link[rgl]{plot3d.function}}.
   #' @return Returns invisibly the probability density function.
   #'
   #' @author Pierre Santagostini, Nizar Bouhlel
@@ -33,7 +33,7 @@ plotmtd <- function(nu, mu, Sigma, xlim = c(mu[1] + c(-10, 10)*Sigma[1, 1]),
   #'
   #' \code{\link{contourmtd}}: contour plot of a bivariate \eqn{t} density.
   #'
-  #' \code{\link{plot3d.function}}: plot a function of two variables.
+  #' \code{\link[rgl]{plot3d.function}}: plot a function of two variables.
   #'
   #' @examples
   #' nu <- 1

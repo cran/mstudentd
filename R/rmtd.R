@@ -19,7 +19,7 @@ rmtd <- function(n, nu, mu, Sigma, tol = 1e-6) {
   #' can be generated using:
   #' \deqn{\displaystyle{X = \mu + \frac{Y}{\sqrt{\frac{u}{\nu}}}}}
   #' where \eqn{Y} is a random vector distributed among a centered Gaussian density
-  #' with covariance matrix \eqn{\Sigma} (generated using \code{\link{mvrnorm}})
+  #' with covariance matrix \eqn{\Sigma} (generated using \code{\link[MASS]{mvrnorm}})
   #' and \eqn{u} is distributed among a Chi-squared distribution with \eqn{\nu} degrees of freedom.
   #'
   #' @author Pierre Santagostini, Nizar Bouhlel

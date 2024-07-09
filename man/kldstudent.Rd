@@ -27,9 +27,9 @@ Computes the Kullback-Leibler divergence between two random vectors distributed
 according to multivariate \eqn{t} distributions (MTD) with zero location vector.
 }
 \details{
-Given \eqn{X_1}, a random vector of \eqn{R^p} distributed according to the centered MTD
+Given \eqn{X_1}, a random vector of \eqn{\mathbb{R}^p} distributed according to the centered MTD
 with parameters \eqn{(\nu_1, 0, \Sigma_1)}
-and \eqn{X_2}, a random vector of \eqn{R^p} distributed according to the MCD
+and \eqn{X_2}, a random vector of \eqn{\mathbb{R}^p} distributed according to the MCD
 with parameters \eqn{(\nu_2, 0, \Sigma_2)}.
 
 Let \eqn{\lambda_1, \dots, \lambda_p} the eigenvalues of the square matrix \eqn{\Sigma_1 \Sigma_2^{-1}}
@@ -59,9 +59,9 @@ and \eqn{D} is given by:
 }
 
 \eqn{F_D^{(p)}} is the Lauricella \eqn{D}-hypergeometric function defined for \eqn{p} variables:
-\deqn{ \displaystyle{ F_D^{(p)}\left(a; b_1, ..., b_p; g; x_1, ..., x_p\right) = \sum\limits_{m_1 \geq 0} ... \sum\limits_{m_p \geq 0}{ \frac{ (a)_{m_1+...+m_p}(b_1)_{m_1} ... (b_p)_{m_p} }{ (g)_{m_1+...+m_p} } \frac{x_1^{m_1}}{m_1!} ... \frac{x_p^{m_p}}{m_p!} } } }
-
-The computation of the partial derivative uses the \code{\link{pochhammer}} function.
+\deqn{ \displaystyle{ F_D^{(p)}\left(a; b_1, ..., b_p; g; x_1, ..., x_p\right) = \sum\limits_{m_1 \geq 0} ... \sum\limits_{m_p \geq 0}{ \frac{ (a)_{m_1+...+m_p}(b_1)_{m_1} ... (b_p)_{m_p} }{ (g)_{m_1+...+m_p} } \frac{x_1^{m_1}}{m_1!} ... \frac{x_p^{m_p}}{m_p!} } } }\if{html}{\out{
+<!-- The computation of the partial derivative uses the \code{\link{pochhammer}} function. -->
+}}
 }
 \examples{
 nu1 <- 2
