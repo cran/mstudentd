@@ -1,4 +1,4 @@
-5028161f568aa189da8a26904d8f1f57 *DESCRIPTION
+ec844229b2f9c50c8329fbe051c6350b *DESCRIPTION
 64831520c76714f73fcd15fb10911f56 *NAMESPACE
 97c9019d7bc0309f4893a12528a38a3f *R/contourmtd.R
 326f1fb8d2b0ed3946ea160c239236d2 *R/diststudent.R
@@ -11,7 +11,8 @@ b0c7789b7d9e9b9c7992d771b5a223f7 *R/kldstudent.R
 5264d3fc990d3ea0cfc7fdb116b87fd7 *R/plotmtd.R
 b7df96ea40a16258aca0cc32b4fe7517 *R/pochhammer.R
 e45d1a27344747386e3ad922663e80dd *R/rmtd.R
-b54db8794555342c4feee5fe0b1b8f5b *build/partial.rdb
+b587d710e4176fc919dc16aecd8cac62 *R/zzz.R
+1dda19015f0aa969acee990c150e3ac9 *build/partial.rdb
 17c2a5dee8e18e9fa47e53b292edafed *man/contourmtd.Rd
 2888a85329a4181ebc182e497a6e7360 *man/diststudent.Rd
 c02ff262dc97ae6c402ec2dc3402dfe4 *man/dmtd.Rd
