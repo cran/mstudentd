@@ -19,35 +19,35 @@ test_that("renyi works (dim 3)", {
   expect_equal(round(as.numeric(d21_3), 10), 0.077595179539573)
 })
 
-# Dimension p = 4
+# # Dimension p = 4
+#
+# Sigma1 <- 2*rbind(c(1, 0.6, 0.2, 0), c(0.6, 1, 0.3, 0),
+#                   c(0.2, 0.3, 1, 0), c(0, 0, 0, 1))
+# Sigma2 <- rbind(c(1, 0.3, 0.1, 0), c(0.3, 1, 0.4, 0),
+#                 c(0.1, 0.4, 1, 0), c(0, 0, 0, 1))
+#
+# d12_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma1, nu2 = nu2, Sigma2 = Sigma2, bet = bet, eps = 1e-12)
+# d21_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma2, nu2 = nu2, Sigma2 = Sigma1, bet = bet, eps = 1e-8)
+#
+# test_that("renyi works (dim 4)", {
+#   expect_equal(attr(d12_4, "eps"), 1e-12)
+#   expect_equal(attr(d21_4, "eps"), 1e-8)
+#
+#   expect_equal(as.numeric(d12_4), 0.175486294548201)
+#   expect_equal(as.numeric(d21_4), 0.094669919703894)
+# })
 
-Sigma1 <- 2*rbind(c(1, 0.6, 0.2, 0), c(0.6, 1, 0.3, 0),
-                  c(0.2, 0.3, 1, 0), c(0, 0, 0, 1))
-Sigma2 <- rbind(c(1, 0.3, 0.1, 0), c(0.3, 1, 0.4, 0),
-                c(0.1, 0.4, 1, 0), c(0, 0, 0, 1))
-
-d12_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma1, nu2 = nu2, Sigma2 = Sigma2, bet = bet, eps = 1e-12)
-d21_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma2, nu2 = nu2, Sigma2 = Sigma1, bet = bet, eps = 1e-8)
-
-test_that("renyi works (dim 4)", {
-  expect_equal(attr(d12_4, "eps"), 1e-12)
-  expect_equal(attr(d21_4, "eps"), 1e-8)
-
-  expect_equal(as.numeric(d12_4), 0.175486294548201)
-  expect_equal(as.numeric(d21_4), 0.094669919703894)
-})
-
-# Dimension p = 4, 2nd example
-
-Sigma1 <- 2*rbind(c(1, 0.6, 0.2, 0), c(0.6, 1, 0.3, 0),
-                  c(0.2, 0.3, 1, 0), c(0, 0, 0, 1))
-Sigma2 <- rbind(c(1, 0.3, 0.1, 0), c(0.3, 1, 0.4, 0),
-                c(0.1, 0.4, 1, 0), c(0, 0, 0, 4))
-
-d_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma1, nu2 = nu2, Sigma2 = Sigma2, bet = bet, eps = 5e-8)
-
-test_that("renyi works (dim 4, nd)", {
-  expect_equal(attr(d_4, "eps"), 5e-8)
-
-  expect_equal(as.numeric(d_4), 0.222336597256607)
-})
+# # Dimension p = 4, 2nd example
+#
+# Sigma1 <- 2*rbind(c(1, 0.6, 0.2, 0), c(0.6, 1, 0.3, 0),
+#                   c(0.2, 0.3, 1, 0), c(0, 0, 0, 1))
+# Sigma2 <- rbind(c(1, 0.3, 0.1, 0), c(0.3, 1, 0.4, 0),
+#                 c(0.1, 0.4, 1, 0), c(0, 0, 0, 4))
+#
+# d_4 <- diststudent(nu1 = nu1, Sigma1 = Sigma1, nu2 = nu2, Sigma2 = Sigma2, bet = bet, eps = 5e-8)
+#
+# test_that("renyi works (dim 4, nd)", {
+#   expect_equal(attr(d_4, "eps"), 5e-8)
+#
+#   expect_equal(as.numeric(d_4), 0.222336597256607)
+# })

@@ -12,8 +12,10 @@ export(rmtd)
 import(rgl)
 importFrom(MASS,mvrnorm)
 importFrom(data.table,rbindlist)
-importFrom(graphics,contour)
-importFrom(graphics,par)
+importFrom(graphics,
+  contour,
+  par
+)
 importFrom(rgl,plot3d)
 importFrom(stats,rchisq)
 importFrom(utils,combn)

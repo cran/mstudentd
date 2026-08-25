@@ -31,8 +31,8 @@ N. Bouhlel and D. Rousseau (2023), Exact Rényi and Kullback-Leibler Divergences
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://forgemia.inra.fr/imhorphen/mstudentd}
-  \item Report bugs at \url{https://forgemia.inra.fr/imhorphen/mstudentd/-/issues}
+  \item \url{https://forge.inrae.fr/imhorphen/mstudentd}
+  \item Report bugs at \url{https://forge.inrae.fr/imhorphen/mstudentd/-/boards}
 }
 
 }
